@@ -1,0 +1,144 @@
+.parfum_sect {
+  width: 100%;
+  height: 150px;
+//   background-color: gray;
+  .basliq {
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .text {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      h2 {
+        font-size: 45px;
+        color: #be959f;
+      }
+    }
+    .myInp {
+      width: 500px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      .search {
+        height: 35px;
+        width: 300px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-style: none;
+      }
+      .search:hover{
+        background-color: #be959f;
+        color: white;
+      }
+      .myInp_btn {
+        height: 35px;
+        width: 100px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-style: none;
+        color: #be959f;
+        background-color: #ffffff;
+        font-size: 18px;
+      }
+      .myInp_btn:hover{
+        background-color: #be959f;
+        color: white;
+      }
+    }
+  }
+}
+
+.parfum2_sect {
+  padding-top: 50px;
+  width: 100%;
+  height: 1550px;
+  background-color: #faf9f9;
+//   background-color: red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // justify-content: center;
+
+  .cards {
+    cursor: pointer;
+    // background-color: red;
+    // background-color: green;
+    width: 100%;
+   
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    gap: 50px;
+    .card {
+      background-color: #faf9f9;
+      border-radius: 5px;
+      width: 270px;
+      height: 450px;
+      .card_img {
+        height: 270px;
+        position: relative;
+        top: 0;
+        left: 0;
+      }
+      .card_info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        h3{
+          color: #be959f;
+            font-size: 23px;
+        }
+        p{
+            font-size: 17px;
+            color: rgb(147, 122, 122);
+        }
+        //   position: absolute;
+        //   bottom: 0;
+        //   right: 0;
+        //   max-height: 200px;
+        
+      }
+    }
+    .parfum_btn{
+        height: 42px;
+        width: 110px;
+        border-radius: 5px;
+       border-style: none;
+       background-color: #be959f;
+       color: white;
+       font-size: 15px;
+        
+    }
+    .parfum_btn:hover{
+        background-color: white;
+        color: #be959f;
+    }
+  }
+  .second {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: 5ms;
+  }
+  .second:hover {
+    opacity: 1;
+  }
+  .first {
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+}
+.fa-star {
+  color: rgb(255, 255, 69);
+}

@@ -1,0 +1,411 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.nav_header {
+  width: 100%;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.nav_header .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75px;
+}
+.nav_header .logo img {
+  cursor: pointer;
+  width: 140px;
+  height: 60px;
+  border-radius: 80%;
+}
+.nav_header .slogan {
+  margin-left: 10px;
+  padding-top: 20px;
+}
+.nav_header .slogan p {
+  font-family: "Dancing Script", cursive;
+  font-size: 17px;
+  color: #be959f;
+}
+.nav_header .info_nav {
+  color: #be959f;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 19px;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.nav_list {
+  background-color: #BE959F;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav_list ul {
+  padding-top: 20px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  font-family: "Dancing Script", cursive;
+  font-size: 18px;
+}
+.nav_list a {
+  color: #E8C2D3;
+  text-decoration: none;
+}
+.nav_list a:hover {
+  color: white;
+}
+.nav_list .icon {
+  display: none;
+}
+.nav_list .icon_btn {
+  width: 50px;
+  height: 42px;
+  border-radius: 5px;
+  border-style: none;
+  color: #BE959F;
+}
+
+@media only screen and (max-width: 991px) {
+  .nav_header {
+    width: 615px;
+  }
+  .nav_list {
+    width: 990px;
+  }
+  .nav_list .list {
+    display: none;
+  }
+  .nav_list .icon {
+    display: flex;
+  }
+}
+.img_sect {
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero_sect {
+  padding-top: 50px;
+  width: 100%;
+  height: 100vh;
+  background-color: #faf9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero_sect .info_hero {
+  width: 90%;
+  color: #be959f;
+}
+.hero_sect .info_hero p {
+  font-size: 23px;
+  font-family: "Dancing Script", cursive;
+}
+.hero_sect .cards {
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.hero_sect .cards .card {
+  background-color: #faf9f9;
+  border-radius: 5px;
+  width: 280px;
+  height: 470px;
+}
+.hero_sect .cards .card .card_img {
+  max-height: 270px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.hero_sect .cards .card .card_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-height: 200px;
+}
+.hero_sect .cards .card .card_info h3 {
+  color: #be959f;
+  font-size: 23px;
+}
+.hero_sect .cards .card .card_info p {
+  font-size: 17px;
+  color: rgb(147, 122, 122);
+}
+.hero_sect .second {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: 5ms;
+}
+.hero_sect .second:hover {
+  opacity: 1;
+}
+.hero_sect .first {
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+.fa-star {
+  color: yellow;
+}
+
+.hero2_sect {
+  width: 100%;
+  height: 100vh;
+  background-color: #faf9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hero2_sect .hero2_info p {
+  font-size: 27px;
+}
+.hero2_sect .posts {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.hero2_sect .posts .post {
+  cursor: pointer;
+  text-align: center;
+  background-color: white;
+  border-radius: 7px;
+  width: 300px;
+  height: 500px;
+}
+.hero2_sect .posts .post .post_img {
+  width: 300px;
+  height: 250px;
+}
+.hero2_sect .posts .post .post_info h3 {
+  color: #be959f;
+  font-size: 23px;
+}
+.hero2_sect .posts .post .post_info p {
+  font-size: 17px;
+  color: rgb(147, 122, 122);
+}
+.hero2_sect .posts .post .post_info .btn {
+  width: 120px;
+  height: 40px;
+  color: rgb(147, 122, 122);
+  background-color: white;
+}
+.hero2_sect .posts .post .post_info .btn:hover {
+  width: 150px;
+  transition: 10ms;
+  background-color: #be959f;
+  color: white;
+}
+
+.fa-heart {
+  color: #be959f;
+}
+
+.foot {
+  width: 100%;
+  height: 250px;
+  background-color: #be959f;
+  color: #e8c2d3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+.foot h4 {
+  font-size: 23px;
+}
+.foot h3 {
+  font-size: 28px;
+}
+.foot h4:hover {
+  color: white;
+  font-size: 25px;
+}
+.foot h3:hover {
+  color: white;
+  font-size: 30px;
+}
+.foot p {
+  display: flex;
+  gap: 15px;
+}
+
+.fa-brands {
+  font-size: 30px;
+}
+
+.fa-brands:hover {
+  color: white;
+  font-size: 42px;
+}
+
+.parfum_sect {
+  width: 100%;
+  height: 150px;
+}
+.parfum_sect .basliq {
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.parfum_sect .basliq .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.parfum_sect .basliq .text h2 {
+  font-size: 45px;
+  color: #be959f;
+}
+.parfum_sect .basliq .myInp {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.parfum_sect .basliq .myInp .search {
+  height: 35px;
+  width: 300px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-style: none;
+}
+.parfum_sect .basliq .myInp .search:hover {
+  background-color: #be959f;
+  color: white;
+}
+.parfum_sect .basliq .myInp .myInp_btn {
+  height: 35px;
+  width: 100px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-style: none;
+  color: #be959f;
+  background-color: #ffffff;
+  font-size: 18px;
+}
+.parfum_sect .basliq .myInp .myInp_btn:hover {
+  background-color: #be959f;
+  color: white;
+}
+
+.parfum2_sect {
+  padding-top: 50px;
+  width: 100%;
+  height: 1550px;
+  background-color: #faf9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.parfum2_sect .cards {
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.parfum2_sect .cards .card {
+  background-color: #faf9f9;
+  border-radius: 5px;
+  width: 270px;
+  height: 450px;
+}
+.parfum2_sect .cards .card .card_img {
+  height: 270px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.parfum2_sect .cards .card .card_info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.parfum2_sect .cards .card .card_info h3 {
+  color: #be959f;
+  font-size: 23px;
+}
+.parfum2_sect .cards .card .card_info p {
+  font-size: 17px;
+  color: rgb(147, 122, 122);
+}
+.parfum2_sect .cards .parfum_btn {
+  height: 42px;
+  width: 110px;
+  border-radius: 5px;
+  border-style: none;
+  background-color: #be959f;
+  color: white;
+  font-size: 15px;
+}
+.parfum2_sect .cards .parfum_btn:hover {
+  background-color: white;
+  color: #be959f;
+}
+.parfum2_sect .second {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: 5ms;
+}
+.parfum2_sect .second:hover {
+  opacity: 1;
+}
+.parfum2_sect .first {
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+.fa-star {
+  color: rgb(255, 255, 69);
+}/*# sourceMappingURL=main.css.map */
